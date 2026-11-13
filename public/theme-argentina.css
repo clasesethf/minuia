@@ -1,0 +1,236 @@
+/* MINU IA V4 · Identidad argentina: cielo, blanco, azul institucional y sol dorado.
+   Este tema se carga después de styles.css para conservar el funcionamiento V3. */
+:root {
+  --bg: #edf6fc;
+  --sidebar: #103456;
+  --surface: #ffffff;
+  --surface2: #eef7ff;
+  --border: #d3e4f1;
+  --text: #153757;
+  --muted: #6c8299;
+  --gold: #ba8b28;
+  --blue: #75aadb;
+  --green: #16816b;
+}
+html { background: #edf6fc; }
+body {
+  color: var(--text);
+  background:
+    radial-gradient(ellipse at 83% 3%, rgba(117,170,219,.28), transparent 36%),
+    radial-gradient(ellipse at 18% 84%, rgba(206,232,250,.46), transparent 45%),
+    linear-gradient(160deg,#f8fcff 0%,#eaf4fb 56%,#f5faff 100%);
+}
+.app { color: var(--text); }
+.main { max-width: 1600px; }
+
+/* Navegación institucional */
+.sidebar {
+  background:
+    radial-gradient(circle at 6% 4%,rgba(126,188,234,.23),transparent 34%),
+    linear-gradient(180deg,#0f3f6d 0%,#0c3157 45%,#092748 100%);
+  border-right: 1px solid #2b6da0;
+  box-shadow: 8px 0 32px rgba(23,69,106,.07);
+}
+.brand { border-bottom: 1px solid #ffffff23; margin-bottom: 21px; padding-bottom: 29px; }
+.brand .crest {
+  width: 48px; height: 48px; color:#f6d687;
+  border:1px solid #d1b57488;
+  background: radial-gradient(circle,#ffffff17,#ffffff08);
+  box-shadow:0 0 0 3px #ffffff0b;
+}
+.brand strong { color:#fff; }
+.brand i { color:#b7e2ff; }
+.brand small { color:#bcdaf0; }
+.sidetitle { color:#9dcced; }
+.nav { color:#c4dff0; }
+.nav:hover { color:#fff; background:#ffffff17; }
+.nav.active {
+  color:#fff; background:linear-gradient(90deg,#4a91c688,#ffffff0c);
+  box-shadow:inset 4px 0 #e9bf62;
+}
+.nav small { color:#eaf7ff; background:#ffffff26; }
+.class-info { color:#e7f6ff; border-color:#ffffff26; background:#ffffff09; }
+.class-info span:last-child { color:#b0d2e9; }
+.privacy { color:#a6c3d7; }
+.dot { background:#edc571; }
+
+/* Barra superior, insignias y tipografía */
+.topbar {
+  background:rgba(255,255,255,.74);
+  border-bottom:1px solid #d4e5f2;
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+}
+.breadcrumb { color:#6a8ba8; }
+.breadcrumb span { color:#b9cbdc; }
+.breadcrumb strong { color:#19466c; }
+.chip { color:#166e67; background:#e4f5ed; border:1px solid #bcdfd2; }
+.page { padding-top: 30px; }
+.heading h1 { color:#153859; letter-spacing:-.9px; }
+.heading p { color:#617f9a; }
+.heading>div>small,.section-head small { color:#377fae; }
+.heading .tag,.tag { background:#fdf8ed; border-color:#d6bd7a; color:#8a6b28; }
+.section-head h2 { color:#24486b; }
+
+/* Fachada del Congreso: ilustración vectorial original */
+.hero {
+  min-height:340px; padding:40px 44px;
+  border:1px solid #75abce;
+  border-radius:20px;
+  background-image:
+    linear-gradient(90deg,rgba(6,34,65,.98) 0%,rgba(11,51,89,.95) 34%,rgba(18,64,105,.71) 56%,rgba(25,80,132,.06) 93%),
+    url('/assets/congreso-hero.svg');
+  background-size:cover,cover;
+  background-position:center,center 53%;
+  box-shadow:0 18px 40px rgba(23,78,126,.20);
+}
+.hero::before {
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.09) 0%,transparent 30%,rgba(6,37,74,.20) 100%);
+}
+.hero::after {
+  content:"PALACIO DEL CONGRESO · ILUSTRACIÓN ORIGINAL";
+  position:absolute;right:19px;bottom:15px;z-index:1;
+  font-size:9px;letter-spacing:1.2px;color:#e4f2fa;
+  background:#0e3457b3;border:1px solid #e9f3ff44;padding:6px 9px;border-radius:20px;
+}
+.hero-kicker { color:#f5d895; }
+.hero h1 {
+  color:#f8fcff; max-width:670px;
+  font-size:clamp(37px,4.2vw,57px);
+  text-shadow:0 3px 14px #09284877;
+}
+.hero h1 em { color:#c2e5fc; }
+.hero p { color:#e9f4ff; max-width:535px; }
+.hero .hero-emblem { color:#fff; opacity:.08; right:340px; }
+.hero-actions { position:relative; z-index:1; }
+
+/* Botones */
+.primary {
+  color:#062a48;
+  background:linear-gradient(135deg,#a8d5f4 0%,#75aadb 70%,#65a1d2 100%);
+  border:1px solid #73a9d1;
+  box-shadow:0 5px 13px #1d689133;
+}
+.primary:hover { filter:brightness(1.06); box-shadow:0 8px 18px #1d68914d; }
+.outline {
+  background:#fff;color:#23618f;border:1px solid #a6c5df;
+}
+.outline:hover { background:#e9f5fe; }
+.danger { background:#fff2f2;color:#9c3438;border-color:#e5b5b8; }
+.hero .outline { background:#f5faffed; color:#1a5884; border-color:#c4e1f7; }
+
+/* Tarjetas, indicadores y superficie de lectura */
+.surface,.metric {
+  background:rgba(255,255,255,.94);
+  border:1px solid #d3e4f1;
+  border-radius:17px;
+  box-shadow:0 9px 28px rgba(29,85,130,.07);
+}
+.metric { position:relative;overflow:hidden;padding-top:24px; }
+.metric::before {
+  content:"";position:absolute;top:0;left:0;right:0;height:4px;
+  background:linear-gradient(90deg,#75aadb,#c2e6f8,#e0bb65);
+}
+.metric small { color:#5481a3; }
+.metric b { color:#1c5c8a; }
+.metric p { color:#8199ac; }
+.cols .surface:last-child { background:linear-gradient(180deg,#fff,#f7fbff); }
+.step { border-bottom-color:#dce9f3; }
+.step>span { color:#bf963f; }
+.step b { color:#294c6e; }
+.step p { color:#6a839b; }
+.legend { color:#5f7d98; }
+
+/* Ilustración de bancas sobre ambos recintos interactivos */
+.hemicycle {
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.40) 0%,rgba(245,250,255,.80) 72%,#f6faff 100%),
+    url('/assets/recinto-bancas.svg') center top / 100% auto no-repeat;
+  border:1px solid #e3eff7;border-radius:13px;
+  overflow:hidden;
+}
+.seat { border-color:#fff;box-shadow:0 1px 3px #20496633,0 0 0 2px #ffffff88; }
+.seat.active { border-color:#edc86f;box-shadow:0 0 0 5px #e9c16c66,0 0 16px #edc86f; }
+.dais {
+  color:#effaff;background:#24577f;border-color:#96bed8;
+  box-shadow:0 6px 14px #173b5833;
+}
+.president { background:#edf7fc;border-color:#cbdde8; }
+.president>span { color:#bb943c; }
+.president strong { color:#254f76; }
+.president small { color:#66849f; }
+
+/* Listado y editor de gemelos */
+.filters input,.filters select,input,textarea,select {
+  background:#f5faff;color:#193c5b;border:1px solid #c6dae9;
+}
+input::placeholder,textarea::placeholder { color:#879eb2; }
+input:focus,textarea:focus,select:focus { border-color:#559acb;box-shadow:0 0 0 3px #75aadb22; }
+input:disabled { background:#edf4fa;color:#6a879e; }
+.agent-item { color:#1c3f5f;background:#f4f9fe;border-color:#deebf5; }
+.agent-item:hover { background:#eaf5fd;border-color:#9bc3e0; }
+.agent-item.selected { background:#e5f2fc;border-color:#5b9dcf;box-shadow:inset 3px 0 #75aadb; }
+.avatar { background:#d9ecfb;color:#2a6d9e; }
+.agent-item small { color:#6786a0; }
+.agent-item .configured { color:#0e9d75; }
+.agent-item .media-indicator { color:#b9872b; }
+label { color:#315a7b; }
+.muted { color:#728aa0!important; }
+.editor .section-head { border-bottom:1px solid #e4eef5;padding-bottom:12px; }
+.student-lock { color:#315b7c;background:#e9f5fd;border-color:#c4dfea;border-left-color:#75aadb; }
+
+/* Fotos, voces y acceso */
+.media-card { background:linear-gradient(145deg,#eef8ff,#f7fbff);border-color:#c2dcf0; }
+.media-title strong { color:#215d87; }
+.media-title small { color:#6c8aa4; }
+.photo-preview { background:linear-gradient(155deg,#d5edfc,#f9fcff);border-color:#94b8d4; }
+.photo-preview span { color:#6486a1; }
+.media-audio strong { color:#265a81; }
+.media-audio p,.media-hint { color:#65859e; }
+.media-msg { color:#a67b26; }
+.speech-avatar { background:#d7e9f7;color:#2a678e; }
+.api-box { background:#eff7fd;border-color:#a9c9df; }
+.api-box strong { color:#245c81; }
+.api-box p { color:#587892; }
+.login-overlay { background:#12365cca;backdrop-filter:blur(5px); }
+.login-card { background:#fff;border-color:#bed7e9;color:#26415d;box-shadow:0 25px 90px #10334f77; }
+.login-card h2 { color:#1f527d; }
+.login-card p { color:#5c7894; }
+.login-card code { color:#ab7e22; }
+.login-card input { background:#f4faff;color:#123a59;border-color:#b8d0e2; }
+.login-error { color:#b62e42!important; }
+
+/* Debate, escrutinio y acta */
+.chamber-surface { background:linear-gradient(180deg,#fff 0%,#f6fbff 100%); }
+.session-controls h3 { color:#1e527b; }
+.live-tag { color:#597f9e;border-color:#b7d0e5;background:#eef7ff; }
+.live-tag.running { color:#087b62;border-color:#9cdecd;background:#e4f9f1; }
+.speech { background:#f0f8ff;border-left-color:#75aadb; }
+.speech:first-child { border-left-color:#c8a14c; }
+.speech header b { color:#1c476a; }
+.speech header small { color:#7c9db6; }
+.speech p { color:#3b5975; }
+.vote-bars>div>span { color:#3d5e7d; }
+.bar-bg { background:#e8f1f7; }
+.vote-result { color:#587b99;background:#f5faff;border-color:#bcd6e8; }
+.vote-row { border-bottom-color:#d5e6f1; }
+.paper { background:#fffdf6;color:#263e55;border:1px solid #ece2c5;box-shadow:inset 0 0 30px #d2b97d0d; }
+.empty { color:#7a92a8; }
+
+@media (max-width:1050px) {
+  .hero { background-position:center,61% center; }
+}
+@media (max-width:680px) {
+  .sidebar { box-shadow:none; }
+  .brand { border:0;margin:0;padding-bottom:12px; }
+  .hero { padding:28px 24px; min-height:335px; background-image:linear-gradient(90deg,rgba(7,37,72,.97),rgba(12,47,83,.83)),url('/assets/congreso-hero.svg'); }
+  .hero::after { bottom:11px;right:9px;font-size:8px; }
+  .hero h1 { font-size:36px; }
+  .metric { padding:17px 13px; }
+  .topbar { background:#fdfefe; }
+  .page { padding:17px 15px 45px; }
+}
+@media(prefers-reduced-motion:reduce){
+  .seat,.primary,.outline { transition:none; }
+}
