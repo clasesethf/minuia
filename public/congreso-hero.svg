@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title description">
+  <title id="title">Ilustración del Palacio del Congreso de la Nación Argentina</title>
+  <desc id="description">Interpretación arquitectónica estilizada del Palacio del Congreso, con cúpula, columnas y bandera argentina.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a9d9f2"/><stop offset=".48" stop-color="#6da9d5"/><stop offset="1" stop-color="#2d6599"/></linearGradient>
+    <radialGradient id="halo" cx="55%" cy="30%" r="60%"><stop stop-color="#fffbdc" stop-opacity=".84"/><stop offset=".45" stop-color="#d9eefa" stop-opacity=".28"/><stop offset="1" stop-color="#96bce3" stop-opacity="0"/></radialGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f1f0e6"/><stop offset=".55" stop-color="#d5e4ee"/><stop offset="1" stop-color="#8aa8c0"/></linearGradient>
+    <linearGradient id="stoneDark" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#bacfdb"/><stop offset="1" stop-color="#527c9c"/></linearGradient>
+    <linearGradient id="dome" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#325f76"/><stop offset=".4" stop-color="#7fae9d"/><stop offset=".72" stop-color="#3f8584"/><stop offset="1" stop-color="#244b60"/></linearGradient>
+    <linearGradient id="foreground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#183d69" stop-opacity="0"/><stop offset="1" stop-color="#102849" stop-opacity=".85"/></linearGradient>
+    <pattern id="micro" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r=".55" fill="#ffffff" opacity=".13"/></pattern>
+    <g id="column"><rect x="0" y="11" width="22" height="166" fill="url(#stone)"/><rect x="3" y="11" width="3" height="166" fill="#ffffff" opacity=".55"/><rect x="16" y="11" width="3" height="166" fill="#496f8e" opacity=".35"/><rect x="-5" y="3" width="32" height="13" fill="#edf2f0"/><rect x="-3" y="0" width="28" height="4" fill="#9cb7c8"/><rect x="-5" y="174" width="32" height="12" fill="#99b2c3"/></g>
+    <g id="window"><rect width="26" height="71" rx="11" fill="#264968"/><rect x="2" y="2" width="22" height="65" rx="10" fill="#406b84"/><path d="M13 4v62M4 34h18" stroke="#d6e4e5" stroke-opacity=".65" stroke-width="2"/><rect y="55" width="26" height="5" fill="#96b2c1"/></g>
+    <g id="baluster"><rect x="0" y="0" width="8" height="23" rx="3" fill="#e5eae6"/></g>
+  </defs>
+  <rect width="1600" height="720" fill="url(#sky)"/>
+  <rect width="1600" height="720" fill="url(#halo)"/>
+  <path d="M0 390C180 320 350 348 530 375S900 420 1070 360s360-120 530-65v420H0Z" fill="#b5d6e9" opacity=".18"/>
+  <path d="M0 486C290 438 470 486 680 470S1080 435 1600 490v230H0Z" fill="#5a90b8" opacity=".23"/>
+  <g fill="#f9fbfd" opacity=".2"><path d="M107 150v58M78 179h58M141 405v28M127 419h28M1391 142v52M1365 168h52M1465 340v29M1451 354h29" stroke="#fff" stroke-width="2"/></g>
+  <g transform="translate(740 65)">
+    <path d="M175 275h235v66H175z" fill="url(#stoneDark)"/>
+    <path d="M208 266h170v-24c-2-24-14-40-35-63-23-27-37-59-39-99h-24c-2 40-16 72-39 99-20 22-33 39-33 63z" fill="url(#dome)" stroke="#244d68" stroke-width="4"/>
+    <path d="M230 244c0-52 34-89 51-133M347 244c0-52-34-89-51-133" stroke="#d9e6d1" stroke-width="3" fill="none" opacity=".55"/>
+    <path d="M254 243c0-68 20-100 34-130M321 243c0-68-20-100-34-130" stroke="#173f59" stroke-width="2" fill="none" opacity=".45"/>
+    <path d="M263 81h53l-9-25h-35z" fill="url(#dome)"/><rect x="282" y="19" width="13" height="40" fill="#275e70"/><path d="M288 0v25" stroke="#e4c574" stroke-width="5"/><path d="M276 10h24" stroke="#e4c574" stroke-width="4"/>
+    <rect x="191" y="268" width="201" height="19" fill="#d9e5e6"/><rect x="185" y="283" width="213" height="16" fill="#91b5bb"/><g transform="translate(200 304)"><use xlink:href="#column"/><use xlink:href="#column" x="40"/><use xlink:href="#column" x="80"/><use xlink:href="#column" x="120"/><use xlink:href="#column" x="160"/></g>
+  </g>
+  <g transform="translate(310 337)">
+    <rect x="45" y="160" width="1030" height="214" fill="url(#stone)"/>
+    <rect x="5" y="202" width="1110" height="160" fill="url(#stoneDark)"/>
+    <rect x="0" y="345" width="1120" height="27" fill="#edf0e8"/><rect x="-20" y="370" width="1160" height="25" fill="#8dacbf"/>
+    <g transform="translate(45 214)"><use xlink:href="#window"/><use xlink:href="#window" x="60"/><use xlink:href="#window" x="120"/><use xlink:href="#window" x="180"/><use xlink:href="#window" x="776"/><use xlink:href="#window" x="836"/><use xlink:href="#window" x="896"/><use xlink:href="#window" x="956"/></g>
+    <rect x="287" y="92" width="535" height="264" fill="url(#stone)"/>
+    <path d="M268 92L556 12 840 92Z" fill="#e3e9e7" stroke="#aac1cf" stroke-width="10"/><path d="M323 88 554 31 784 88Z" fill="#b8d0dc"/><path d="M425 71l124-28 112 28" stroke="#7b9fb4" stroke-width="6" fill="none"/>
+    <rect x="270" y="94" width="575" height="22" fill="#f3f2e8"/><rect x="279" y="117" width="554" height="14" fill="#84a6b9"/>
+    <g transform="translate(315 137)"><use xlink:href="#column"/><use xlink:href="#column" x="79"/><use xlink:href="#column" x="158"/><use xlink:href="#column" x="237"/><use xlink:href="#column" x="316"/><use xlink:href="#column" x="395"/><use xlink:href="#column" x="474"/></g>
+    <rect x="294" y="328" width="529" height="19" fill="#e9eeea"/><rect x="272" y="349" width="575" height="13" fill="#aac0cb"/>
+    <path d="M342 370h432l85 52H255Z" fill="#c7d9e0"/><path d="M295 399h519l60 26H234Z" fill="#9db9c9"/>
+    <rect x="26" y="172" width="266" height="10" fill="#edf3f1"/><rect x="831" y="172" width="256" height="10" fill="#edf3f1"/>
+    <rect x="0" y="137" width="279" height="17" fill="#e8eef0"/><rect x="841" y="137" width="274" height="17" fill="#e8eef0"/>
+  </g>
+  <path d="M0 682h1600v38H0z" fill="#15375c"/>
+  <path d="M0 620q400-50 800 15t800-6v91H0Z" fill="url(#foreground)"/>
+  <rect width="1600" height="720" fill="url(#micro)"/>
+  <g transform="translate(1484 44)" opacity=".95"><path d="M0 0v153" stroke="#f5f7f6" stroke-width="3"/><path d="M2 12q24-13 48 0t48 0v62q-23 13-48 0T2 74Z" fill="#f5fafc"/><path d="M2 12q24-13 48 0t48 0v18q-23 13-48 0T2 30Z" fill="#74b5e0"/><path d="M2 58q24-13 48 0t48 0v16q-23 13-48 0T2 74Z" fill="#74b5e0"/><circle cx="50" cy="43" r="10" fill="#e6b859"/></g>
+</svg>
