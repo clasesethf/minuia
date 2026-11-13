@@ -38,7 +38,12 @@ export default {
    let data;try{data=await request.json()}catch{return json({error:'JSON inválido'},400)}
    const prompt=data?.prompt, apiKey=data?.apiKey;
    if(typeof prompt!=='string'||!prompt.trim()||prompt.length>14000)return json({error:'Prompt inválido o demasiado extenso'},400);
-   if(typeof apiKey!=='string'||!(/^[A-Za-z0-9_-]{20,256}$/).test(apiKey))return json({error:'Ingresá una API Key válida desde el panel docente. No se guarda.'},400);
+   // Google AI Studio emite tanto claves tradicionales como claves de autorización
+   // (que pueden contener puntos, por ejemplo el prefijo «AQ.»). Evitamos imponer
+   // un alfabeto propio: solo descartamos valores vacíos, espacios y controles.
+   // Google valida la autenticidad de la clave al recibir la solicitud.
+   const apiKeyFormatOk=typeof apiKey==='string'&&apiKey.length>=20&&apiKey.length<=512&&/^[\x21-\x7e]+$/.test(apiKey)&&!/^['"]|['"]$/.test(apiKey);
+   if(!apiKeyFormatOk)return json({error:'La API Key debe pegarse completa, sin espacios ni comillas. Copiala directamente de Google AI Studio; no se guarda.'},400);
    const model=env.GEMINI_MODEL||'gemini-3.5-flash-lite';
    const ctrl=new AbortController();const timer=setTimeout(()=>ctrl.abort(),45000);
    try{
